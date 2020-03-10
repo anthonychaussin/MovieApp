@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fXW-9p-fmI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dPd-3F-Rb6">
+            <objects>
+                <viewController id="div-Tb-Xah" customClass="ViewController" customModule="BandeAnnonce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="top" id="tzO-sI-ViC" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNm-OU-qA1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-3E-6BU">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="478"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yn-c3-FIp" userLabel="Title2">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Title2" label="Title2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.5" id="zOf-YM-9B0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.91980725529999996" green="0.50964452969999996" blue="0.079312223330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18B-n0-Ej9" userLabel="SubTitle">
+                                                <rect key="frame" x="0.0" y="20.5" width="414" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="SubTitle" label="SubTitle"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.5" id="ACh-Ev-d02"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqN-20-o3L">
+                                                <rect key="frame" x="0.0" y="41" width="414" height="250"/>
+                                                <subviews>
+                                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fv6-cQ-h0f" userLabel="Poster">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <accessibility key="accessibilityConfiguration" hint="Player" identifier="Poster" label="Poster">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES" selected="YES"/>
+                                                        </accessibility>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="250" id="75F-lX-C4i"/>
+                                                        </constraints>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small" weight="light"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <button opaque="NO" alpha="0.5" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-ww-LnG">
+                                                        <rect key="frame" x="82" y="0.5" width="250" height="249"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cZb-ww-LnG" secondAttribute="height" multiplier="1:1" id="K8n-8U-QR6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="tintColor" red="0.91980725529999996" green="0.50964452969999996" blue="0.079312223330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" backgroundImage="play.circle" catalog="system">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="ultraLight"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="PlayerClicked:" destination="div-Tb-Xah" eventType="touchUpInside" id="TZq-Kb-BvY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="YyU-Uq-Mo0" firstAttribute="bottom" secondItem="fv6-cQ-h0f" secondAttribute="bottom" id="31a-Vt-DOC"/>
+                                                    <constraint firstItem="fv6-cQ-h0f" firstAttribute="top" secondItem="YyU-Uq-Mo0" secondAttribute="top" id="A3p-xh-naZ"/>
+                                                    <constraint firstItem="fv6-cQ-h0f" firstAttribute="leading" secondItem="YyU-Uq-Mo0" secondAttribute="leading" symbolic="YES" id="IyF-TU-23h"/>
+                                                    <constraint firstItem="cZb-ww-LnG" firstAttribute="height" secondItem="fv6-cQ-h0f" secondAttribute="height" id="PI7-bt-eMI"/>
+                                                    <constraint firstItem="cZb-ww-LnG" firstAttribute="centerY" secondItem="mqN-20-o3L" secondAttribute="centerY" id="SRj-mM-isW"/>
+                                                    <constraint firstItem="cZb-ww-LnG" firstAttribute="centerX" secondItem="mqN-20-o3L" secondAttribute="centerX" id="i4F-1D-IJP"/>
+                                                    <constraint firstItem="YyU-Uq-Mo0" firstAttribute="trailing" secondItem="fv6-cQ-h0f" secondAttribute="trailing" id="xZW-Nb-55E"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="YyU-Uq-Mo0"/>
+                                            </view>
+                                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="center" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TsR-if-fgG" userLabel="HorizontalCatStack">
+                                                <rect key="frame" x="0.0" y="291" width="414" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-07-ILH" userLabel="OutDate">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="OutDate" label="OutDate"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-sz-WaM" userLabel="Duration">
+                                                        <rect key="frame" x="372" y="0.0" width="42" height="20.5"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="DurationLabel" label="Duration"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.5" id="Bvd-3D-lGD"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4R-0b-abO">
+                                                <rect key="frame" x="0.0" y="311.5" width="414" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" verticalHuggingPriority="249" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UZ-Ig-w6J" userLabel="Resum">
+                                                <rect key="frame" x="0.0" y="311.5" width="414" height="166.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Resum" label="Resum">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES" adjustable="YES"/>
+                                                </accessibility>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" smartDashesType="yes"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="c4U-3E-6BU" firstAttribute="leading" secondItem="ISc-N0-JNh" secondAttribute="leading" symbolic="YES" id="2Os-ve-zvj"/>
+                                    <constraint firstItem="ISc-N0-JNh" firstAttribute="trailing" secondItem="c4U-3E-6BU" secondAttribute="trailing" id="V5S-V7-h2L"/>
+                                    <constraint firstItem="c4U-3E-6BU" firstAttribute="height" secondItem="hyA-DG-ryh" secondAttribute="height" id="naP-zU-OOJ"/>
+                                    <constraint firstItem="c4U-3E-6BU" firstAttribute="width" secondItem="hyA-DG-ryh" secondAttribute="width" id="qiV-Ar-R4R"/>
+                                    <constraint firstItem="c4U-3E-6BU" firstAttribute="top" secondItem="WNm-OU-qA1" secondAttribute="top" constant="20" symbolic="YES" id="wIB-8o-JL8"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hyA-DG-ryh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ISc-N0-JNh"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EKK-hF-iwO" firstAttribute="trailing" secondItem="WNm-OU-qA1" secondAttribute="trailing" id="C7H-8L-MQ4"/>
+                            <constraint firstItem="WNm-OU-qA1" firstAttribute="leading" secondItem="EKK-hF-iwO" secondAttribute="leading" id="Maz-vn-QwG"/>
+                            <constraint firstItem="WNm-OU-qA1" firstAttribute="top" secondItem="EKK-hF-iwO" secondAttribute="top" id="gbq-C0-3xt"/>
+                            <constraint firstItem="EKK-hF-iwO" firstAttribute="bottom" secondItem="WNm-OU-qA1" secondAttribute="bottom" id="qpL-L8-Q8Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EKK-hF-iwO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6p3-9O-5FZ"/>
+                    <connections>
+                        <outlet property="Cat" destination="j4R-0b-abO" id="1qi-RM-RtN"/>
+                        <outlet property="Duration" destination="h5v-sz-WaM" id="B5h-21-Ouh"/>
+                        <outlet property="MainView" destination="tzO-sI-ViC" id="QTN-J9-ED8"/>
+                        <outlet property="MovieTitle" destination="3Yn-c3-FIp" id="9ck-6T-NfP"/>
+                        <outlet property="OutDate" destination="Y9P-07-ILH" id="M0Q-yx-lSC"/>
+                        <outlet property="Player" destination="cZb-ww-LnG" id="zGC-bc-2Xh"/>
+                        <outlet property="Poster" destination="fv6-cQ-h0f" id="tR6-ja-bgP"/>
+                        <outlet property="Resum" destination="4UZ-Ig-w6J" id="Cd7-21-B0G"/>
+                        <outlet property="SubTitle" destination="18B-n0-Ej9" id="eIe-rP-3mr"/>
+                        <outlet property="VerticalStack" destination="TsR-if-fgG" id="5Tk-eD-6FE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KM4-rq-w9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="-558"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="mIN-O1-cfS">
+            <objects>
+                <viewController id="3HM-gZ-Wae" customClass="ListViewController" customModule="BandeAnnonce" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DmJ-Uq-0X1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="separatorColor" red="0.91980725529999996" green="0.50964452969999996" blue="0.079312223330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="vGv-x8-7GH"/>
+                    <connections>
+                        <outlet property="movieTableView" destination="DmJ-Uq-0X1" id="FWb-ha-7Yh"/>
+                        <segue destination="div-Tb-Xah" kind="showDetail" identifier="ShowDetailNavigation" destinationCreationSelector="DetailSegue:" id="prG-ic-Lge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EI-q1-gTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-576"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Btt-uO-ZUJ">
+            <objects>
+                <collectionViewController id="fXW-9p-fmI" customClass="CollectionViewController" customModule="BandeAnnonce" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TbJ-WR-c0X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.13953710289999999" green="0.13960164999999999" blue="0.15463953580000001" alpha="0.72219027440000005" colorSpace="custom" customColorSpace="displayP3"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="idN-vl-VDX">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="fXW-9p-fmI" id="XF5-3T-5Ac"/>
+                            <outlet property="delegate" destination="fXW-9p-fmI" id="a3a-wy-Ah8"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="3HM-gZ-Wae" kind="show" identifier="ShowGenredMovieSegue" id="zDi-qR-ujb"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN9-Ng-nrw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
